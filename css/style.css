@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document for we follow */
+
+/* -----------------------------------------------------------------
+                          Global Reset
+-------------------------------------------------------------------- */
+
+* { padding: 0; margin: 0; }
+a { outline: none; cursor: pointer; }
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: normal; }
+a, bbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt, u, ul, var { margin: 0; padding: 0; list-style: none; }
+html { margin: 0; padding: 0; font-size: 100%; line-height: normal; }
+body{ font:14px/18px Arial, Helvetica, sans-serif;  color: #333;}
+.clearfix { clear: both; }
+.wrapper{ float:left; width:100%;}
+.wrapper.inner{ background:none;} 
+.center{ width:1000px; margin:auto;}
+.header{ float:left; width:100%; padding:30px 0px; background:#1d81a7;}
+.logo { padding:10px 0px; float:left;}
+.logo a{ font-size:23px; color:#fff; text-decoration:none; }
+.header-login{ float:right; width:auto;padding-top: 10px;}
+.header-login a{ float:left; width:auto; padding:5px 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; background:#fff;  color: #000; margin-left:10px; text-decoration:none;} 
+.header-login a:hover{ background:#000; color:#fff;}
+.banner{ float:left; width:100%;  padding:40px 0px;  background:url(../images/menwork.jpg) no-repeat center top; background-size:cover;}
+.banner img{ float:right;}
+
+.banner .center fieldset{ float:right; width:580px; background:#fff; border:1px solid #ddd; padding:20px 2%;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; background:url(../images/transparent.png) repeat} 
+.banner .center fieldset h2{ padding-bottom:8px;font-weight:bold; color:#1d81a7;} 
+.banner .center fieldset p{ float:left; width:100%; padding-bottom:20px;}
+.banner .center fieldset .form-field{ margin-bottom:15px; float:left; width:50%; }
+.banner .center fieldset .form-field p{ float:left; width:auto; margin-right:15px; padding: 7px 0px 0px 0px;}
+.banner .center fieldset .form-field label{ float:left; width:auto; margin-right:15px; padding: 7px 0px 0px 0px; font-weight:bold;}
+.banner .center fieldset .form-field  input{ width:80%; height:auto; padding:6px 12px; margin-right:5px;margin-top: 2px;}
+.banner .center fieldset .form-field.second input, .banner form fieldset .form-field.second select{ float:right;}
+.banner form fieldset input{ float:left; width:90%; padding:7px 2%; border:1px solid #ddd;color: #818181;}
+.banner form fieldset select{ float:left; width:95%; padding:7px 2%; border:1px solid #ddd;color: #818181;}
+.banner .center fieldset input.submit{width:auto; float:right; padding:7px 16px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; background:#1d81a7;  text-decoration:none; color:#FFF; border:1px solid #1d81a7; font-weight:bold;}
+.banner form fieldset input.submit:hover{ background:#000; cursor:pointer;border:1px solid #000;}
+.welcome{ float:left; width:100%; background:#f4f4f4; padding:20px 0px; border-bottom:1px solid #ddd;  border-top:1px solid #ddd;}
+.welcome p{ padding-bottom:25px;}
+.welcome h2{ padding-bottom:15px; font-weight:bold; color:#1d81a7; text-transform: uppercase; padding-top:10px;}
+.info{ float:left; width:100%; padding:50px  0px; }
+.info .col-1{ width:33.33%; float:left; text-align:center;}
+.info .col-1 span{  margin:auto;width:132px;}
+.info .col-1 span:hover .fa{ color:#666; border-color:#666; cursor:pointer; }
+.info .col-1 .fa{ font-size:41px; padding-top:40px; color:#1d81a7;width:132px; height:92px; border:1px solid #1d81a7; -webkit-border-radius: 95px; -moz-border-radius: 95px; border-radius: 95px;}
+.info .col-1 a{width:auto; padding:7px 16px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; background:#1d81a7;  text-decoration:none;  color:#FFF;}
+.info .col-1 a:hover{ background:#666;}
+.info .col-1 p{ padding:15px 10px;}
+.subscribe h2 span{ float:left; width:100%; font-weight:normal; font-size:14px;line-height: 30px;}
+.subscribe form{ border:0px none; float:left; width:100%;}
+.subscribe form fieldset{ border:0px none; float:left; width:100%; padding-top: 7px;}
+.subscribe form fieldset input{ float:left; margin:4px 0px ; padding:7px 2%; background:#fff;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border:1px solid #ddd; width:238px; margin:0px 0px; }
+.subscribe form fieldset input.sign{width:108px; margin-top:5px; padding:7px 16px; float:right; font-size:14px; background:#f2f2f2;  text-decoration:none; background:#1d81a7; color:#FFF; border:1px solid #1d81a7; font-weight:bold;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.subscribe form fieldset input.sign:hover{ background:#000; cursor:pointer; border:1px solid #000;}
+.work{ float:left; width:100%; padding:50px 0px; text-align:center; background:#f4f4f4;    border-bottom: 1px solid #dddddd; border-top: 1px solid #dddddd; margin-bottom:50px;}
+.work p{ font-size:17px; padding-bottom:12px;}
+.work h1{ padding-bottom:15px; font-weight:bold; color:#1d81a7; text-transform: uppercase; padding-top:10px;}
+.work ul{ float:left; width:100%;}
+.work ul li.first{ margin-left:0px;}
+.work ul li h3{ width:100%; text-align:center; color:#fff; padding-top:87px; font-weight:bold; font-size:17px; text-transform:uppercase; text-decoration:none;}
+.work ul li{ float:left; width:320px; margin-left:20px; margin-top:20px; height:200px; text-align:left;}
+.work ul li a{ float:left; width:100%; text-align:center;text-decoration:none;}
+.work ul li:hover{ opacity:0.5; cursor:pointer;}
+.work ul li.work1{ background:url(../images/work1.jpg) no-repeat left top;}
+.work ul li.work2{background:url(../images/work2.jpg) no-repeat left top;}
+.work ul li.work3{background:url(../images/work3.jpg) no-repeat left top;}
+.work ul li.work4{background:url(../images/work2.jpg) no-repeat left top;}
+.work ul li.work5{background:url(../images/work3.jpg) no-repeat left top;}
+.work ul li.work6{background:url(../images/work1.jpg) no-repeat left top;}
+.footer{ float:left; width:100%; padding:0px 0px 0px;}
+.footer h2{ font-weight:bold; color:#1d81a7; padding-bottom:20px; text-transform:uppercase;}
+.footer p{ padding-right:24px;}
+.footer p span{ font-weight:bold; color:#666; font-size: 29px; float:left; padding:0px 17px 0px 0px; line-height: 33px;}
+.footer .col-2{ float:left; width:25%;}
+.footer ul{ float:left; width:100%;}
+.footer ul li{ float:left; width:90%; border-bottom:1px dotted #ddd;}
+.footer ul li a{ float:left;  text-decoration:none; padding:5px;  color: #333;}
+.footer ul li a .fa{ margin-right:5px; }
+.footer .col-2.connect ul li a .fa{ float: left; font-size: 20px;} 
+.footer ul li a:hover{ color:#1d81a7;}
+.copyright{ float:left; width:100%; text-align:center; padding:10px 0px; background:#1d81a7; color:#fff; margin-top:50px;}
+
+.signpage{ float:left; width:100%; padding:50px 0px;  border-bottom: 1px solid #dddddd; margin-bottom:50px; background:#f1f1f1;}
+.signpage h3{ width:100%; text-align:center; color:#000; text-transform:uppercase; font-weight:bold; font-size:24px;}
+.signpage form{ margin:auto; width:400px;}
+.signpage form fieldset{ border:1px solid #ddd; padding:20px; background:#fff;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.signpage form p em{ color:#ff0000;}
+.signpage form p{ text-align:right; padding-top:5px; float:left; width:99%;}
+.signpage form fieldset input{ float:left; width:95%; margin-top:15px; padding:7px 2%; border:1px solid #ddd;color: #818181;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.signpage form fieldset input.login{width:auto; float:right; padding:7px 16px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; background:#1d81a7;  text-decoration:none; color:#FFF; border:1px solid #1d81a7; font-weight:bold;}
+.signpage form fieldset input.login:hover{ background:#000; cursor:pointer;border:1px solid #000;}
+.logingtext{ float:left; width:100%; text-align:center;}
+.logingtext a{ float:left; width:99.8%; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-top:10px; color:#fff; text-decoration:none; padding:14px 0px; font-size:15px; font-weight:bold;}
+.logingtext a:hover{ opacity:0.7;}
+.logingtext p{ text-align:center !important; padding:20px 0px !important; }
+.logingtext p span{ float:left; width:100%; padding-bottom:5px; font-weight:bold;}
+.logingtext a.facebook{ background:#3b5998;}
+.logingtext a.google{ background:#d73d32;}
+.mid-content form h3{ margin-top:10px; float:left; width:100%; margin-bottom: 20px;}
+.table-bordered { margin-bottom: 20px;}
+.table-bordered td,.table-bordered th{ padding: 6px 10px;}
+.cat-min{min-height: 445px;}
+.table-bordered input[type="submit"],.table-bordered input[type="reset"]
+{ background: #1d81a7; padding: 5px 15px; color:#fff; border:none;}
+.cat-min form{ display: table;width: 700px;  margin: 0 auto;}
+.table-bordered input[type="text"],.table-bordered input[type="email"],
+.table-bordered input[type="password"],.table-bordered select,
+.table-bordered textarea{ border:1px solid #ebebeb; padding: 5px 12px; width: 545px;}
+.cat-min h3 {
+  font-size: 28px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 13px;
+}
+h4 {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+ .mid-content{ margin: 30px 0 0 0;  float: left;  width: 100%;}
+ .main-con{ margin:0;}
+ .table-bordered.new-mm td { text-align: center;}
+ .center.cat-min td {text-align:center;}
